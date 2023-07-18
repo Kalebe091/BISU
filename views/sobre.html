@@ -1,1 +1,132 @@
-<h1>oi</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="../assets/images/bisuicon.png"/>
+</head>
+<body>
+  <header>
+    <h1 class="header-title">Equipe</h1>
+    <a href="../index.html" class="back-button">Voltar</a>
+  </header>
+  <main>
+    <section class="developer-card">
+      <img src="../assets/images/devs.jpeg" alt="Desenvolvedor 1">
+      <h3>Gabriela Ramos de Jesus • Kalebe Silva de Vasconcelos • Lucas dos Passos Martins</h3>
+      <p>Protótipo de Blog Socioambiental "BISU" desenvolvido por estudantes do curso de Engenharia de Software da Universidade do Estado do Pará(UEPA) para a disciplina Educação Socioambiental.</p>
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2023 Desenvolvedores do Site. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap');
+
+:root{
+    --container-color: #1a1e21;
+    --second-color: rgb(15, 189, 38);
+    --tree-color: #6b4909;
+    --text-color: #172317;
+    --bg-color: #fff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  background-color: var(--text-color);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; /* Coloca os elementos em extremidades opostas */
+  align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+main {
+  background-color: #d6f1d6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.developer-card img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Defina um tamanho máximo para a imagem, se necessário */
+    margin: auto;
+    display: block;
+    border-radius: 4%;
+}
+
+footer {
+  background-color: var(--text-color);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.header-title {
+  margin: 0;
+  flex: 1; /* Ocupa o espaço disponível restante */
+  text-align: left;
+  margin-left: 20px; /* Margem à esquerda para afastar do início */
+}
+
+.back-button {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 12px;
+  background-color: green; /* Estilo da cor verde */
+  border: none;
+  border-radius: 4px;
+  margin-right: 20px; /* Margem à direita para afastar do final */
+}
+
+.back-button:hover {
+  background-color: #2e8b57; /* Cor verde escura ao passar o mouse */
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+
+  .developer-card {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .developer-card img {
+    max-width: 100%; /* A imagem ocupará a largura máxima do contêiner .developer-card */
+  }
+}
+
+</style>

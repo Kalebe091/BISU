@@ -1,104 +1,154 @@
-html {
-    /* Setting a base font size of 10px give us easier rem calculations
-         Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
-       */
-    font-size: 10px;
-  }
-  
-  body {
-    /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
-    font-family: -apple-system, monospace, 'Segoe UI', 'Roboto',
-      'Helvetica Neue', Arial, sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    text-align: center;
-    color: #333;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-  }
-  
-  h1 {
-    font-size: 4rem;
-    margin-bottom: 0;
-  }
-  
-  @media (max-width: 460px) {
-    h1 {
-      font-size: 3.5rem;
-      line-height: 1.2;
-    }
-  }
-  
-  h2 {
-    font-size: 3.25rem;
-  }
-  
-  a {
-    color: #477ca7;
-  }
-  
-  a:visited {
-    color: #74638f;
-  }
-  #image{
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+/* root values */
+:root{
+    --container-color: #1a1e21;
+    --second-color: rgb(15, 189, 38);
+    --tree-color: #6b4909;
+    --text-color: #172317;
+    --bg-color: #fff;
+}
+
+body {
+  font-size: 0.90rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+a {
+  color: #477ca7;
+}
+
+a:visited {
+  color: #74638f;
+
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+ul {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+li {
+  margin: 16px 0;
+}
+
+blockquote {
+  font-style: italic;
+  max-width: 545px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+}
+
+.logomaior{
+  width: 20%;
+  align-items: center;
+}
+
+.back-button {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 12px;
+  background-color: rgb(58, 148, 58); /* Estilo da cor verde */
+  border: none;
+  border-radius: 4px;
+  margin-right: 20px; /* Margem à direita para afastar do final */
+}
+
+.back-button:hover {
+  background-color: #2e8b57; /* Cor verde escura ao passar o mouse */
+}
+
+#btnVoltarAoTopo {
+  display: none;
+  /* O botão estará oculto inicialmente */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--second-color);
+  color: #fff;
+  border: none;
   border-radius: 50%;
-  
-  }
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#image {
+  border-radius: 50%;
+
+}
+
+#main {
+  margin: 30px 8px;
+  padding: 15px;
+  border-radius: 5px;
+  background: rgb(150, 209, 158, 0.973);
+}
+
+#img-div {
+  background: white;
+  padding: 10px;
+  margin: 0;
+}
+
+#img-caption {
+  margin: 15px 0 5px 0;
+}
+
+
+
+#headline {
+  margin: 50px 0;
+  text-align: center;
+}
+
+@media (max-width: 460px) {
   #main {
-    margin: 30px 8px;
-    padding: 15px;
-    border-radius: 5px;
-    background: rgb(150, 209, 158, 0.973);
-  }
-  
-  @media (max-width: 460px) {
-    #main {
-      margin: 0;
-    }
-  }
-  
-  img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-  }
-  
-  #img-div {
-    background: white;
-    padding: 10px;
     margin: 0;
   }
-  
+}
+
+@media (max-width: 460px) {
   #img-caption {
-    margin: 15px 0 5px 0;
+    font-size: 1.4rem;
   }
-  
-  @media (max-width: 460px) {
-    #img-caption {
-      font-size: 1.4rem;
-    }
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
   }
-  
-  #headline {
-    margin: 50px 0;
-    text-align: center;
-  }
-  
-  ul {
-    max-width: 550px;
-    margin: 0 auto 50px auto;
-    text-align: left;
-    line-height: 1.6;
-  }
-  
-  li {
-    margin: 16px 0;
-  }
-  
-  blockquote {
-    font-style: italic;
-    max-width: 545px;
-    margin: 0 auto 50px auto;
-    text-align: left;
-  }
-  
+}

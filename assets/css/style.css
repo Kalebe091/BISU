@@ -44,6 +44,9 @@ section{
 a{
     color: #fff;
 }
+p{
+    text-align: justify;
+}
 
 /* Header */
 header{
@@ -140,6 +143,7 @@ header.shadow .logo{
 .title-text{
     color: #111;
     font-size: 1em;
+    text-align: justify;
 }
 
 .about .imgBx{
