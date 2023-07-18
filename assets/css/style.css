@@ -198,14 +198,14 @@ header.shadow .logo{
 
 .post-box{
     background: var(--bg-color);
-    box-shadow: 0 4px 14px hsl(35deg 25% 15% / 10%);
+    box-shadow: 0 4rem 14rem hsl(35deg 25% 15% / 10%);
     padding: 15px;
     border-radius: 0.5rem;
 }
 
 .post-img{
-    width: 100%;
-    height: 200px;
+    width: 20rem;
+    height: 15rem;
     object-fit: cover;
     object-position: center;
     border-radius: 0.5rem;
@@ -234,6 +234,7 @@ header.shadow .logo{
     text-transform: uppercase;
     margin-top: 4px;
     font-weight: 400;
+    color: #111;
 }
 
 .post-description{
@@ -244,26 +245,7 @@ header.shadow .logo{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-}
-
-.profile{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.profile-img{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
-    border: 2px solid var(--second-color);
-}
-
-.profile-name{
-    font-size: .8rem;
-    font-weight: 500;
+    color: #111;
 }
 
 footer{
